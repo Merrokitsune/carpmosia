@@ -73,7 +73,8 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] DoNotMapWhitelist =
         {
             "/Maps/centcomm.yml",
-            "/Maps/Shuttles/AdminSpawn/**" // admin gaming
+            "/Maps/Shuttles/AdminSpawn/**", // admin gaming
+            "/Maps/_Carpmosia/Legacy/**", // Carpmosia-edit - Revert #38190
         };
 
         /// <summary>
@@ -95,14 +96,33 @@ namespace Content.IntegrationTests.Tests
             "Marathon",
             "MeteorArena",
             "Saltern",
+            "Saltern2", // Carpmosia-edit - Saltern2 port
             "Reach",
             "Oasis",
+            "Oasis2", // Carpmosia-edit - Oasis2 port
             "Amber",
             "Plasma",
             "Elkridge",
             "Relic",
             "dm01-entryway",
             "Exo",
+            "Feint", // Carpmosia-edit - Feint port
+            // Carpmosia-start - Legacy maps
+            "Meta",
+            "Omega",
+            "Core",
+            "Train",
+            "Gate",
+            "Convex",
+            "Loop",
+            "Cog",
+            "Gemini",
+            "Atlas",
+            "Cluster",
+            "Europa",
+            "Aspid",
+            "Barratry",
+            // Carpmosia-end - Legacy maps
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

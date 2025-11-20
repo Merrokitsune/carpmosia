@@ -184,6 +184,7 @@
       - SurgeryTool
       - Dropper
       components:
+      - Defibrillator # Carpmosia-edit - civilian research tweaks
       - Hypospray
       - Injector
       - Pill
@@ -217,6 +218,12 @@
       #   whitelist:
       #     tags:
       #     - WrenchMedical
+      # Carpmosia-start - civilian research tweaks
+      defib:
+        whitelist:
+          components:
+          - Defibrillator
+      # Carpmosia-end - civilian research tweaks
       wrench:
         whitelist:
           tags:
@@ -247,12 +254,10 @@
   - type: Storage
     whitelist:
       tags:
-      # - PlantAnalyzer
       - PlantSampleTaker
       - BotanyShovel
       - BotanyHoe
       - BotanyHatchet
-      - PlantSampleTaker
       - PlantBGone
       - Bottle
       - Syringe
@@ -269,10 +274,6 @@
         whitelist:
           tags:
           - BotanyHatchet
-      # hydro:
-      #   whitelist:
-      #     tags:
-      #     - PlantAnalyzer # Dunno what to put here, should be aight.
       hoe:
         whitelist:
           tags:
@@ -396,6 +397,7 @@
       components:
       - Stunbaton
       - FlashOnTrigger
+      - Ensnaring # Carpmosia-edit - Bolas in Security Belts
       - SmokeOnTrigger
       - Flash
       - Handcuff
